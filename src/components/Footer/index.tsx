@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.info}>
           <p>© 2026 Portal Viagens</p>
-          <p> - Todos os direitos reservados</p>
+          <p>Todos os direitos reservados</p>
         </div>
         <div className={styles.developer}>
           <p>Desenvolvido por Felipe Augusto</p>
