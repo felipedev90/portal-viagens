@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-// @ts-expect-error - CSS import funciona no Next.js
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
