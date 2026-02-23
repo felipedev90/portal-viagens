@@ -57,7 +57,7 @@ export const destinos: Destino[] = [
   },
   {
     id: 8,
-    nome: "Italia",
+    nome: "Itália",
     descricao:
       "A Itália é um país famoso por sua história milenar, arte, gastronomia e paisagens deslumbrantes. De Roma e seus monumentos antigos até Veneza, Florença e a costa amalfitana, a Itália oferece uma combinação única de cultura, culinária e beleza natural.",
     imagem: "/images/viagem_italia_800px.webp",
