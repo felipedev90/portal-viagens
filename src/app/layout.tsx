@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+// @ts-expect-error - CSS import funciona no Next.js
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Portal de Viagens",
-  description: "Em desenvolvimento",
+  title: "Portal Viagens",
+  description: "Descubra os melhores destinos turísticos do mundo",
 };
 
 export default function RootLayout({
@@ -12,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
