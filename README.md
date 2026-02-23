@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portal Viagens
 
-## Getting Started
+Aplicação web desenvolvida com **Next.js 15** que simula um portal de viagens, permitindo explorar destinos turísticos pela Europa com páginas individuais para cada destino.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![CSS Modules](https://img.shields.io/badge/Estilização-CSS%20Modules-orange)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Sobre o Projeto
+
+O Portal de Viagens é uma aplicação que lista destinos turísticos europeus e permite visualizar informações detalhadas sobre cada um. O projeto foi desenvolvido com foco em boas práticas de desenvolvimento frontend, utilizando os recursos modernos do Next.js App Router.
+
+### Funcionalidades
+
+- Página inicial com hero section e call-to-action
+- Listagem de 8 destinos turísticos em grid responsivo
+- Página individual de cada destino com imagem, descrição e navegação
+- Layout global com header e footer reutilizáveis
+- Navegação SPA com `next/link`
+- Design responsivo (desktop, tablet e mobile)
+
+## Tecnologias
+
+- **Next.js 15** — Framework React com App Router e rotas baseadas em arquivos
+- **TypeScript** — Tipagem estática
+- **CSS Modules** — Estilização com escopo local por componente
+- **Lucide React** — Ícones SVG
+- **Next/Image** — Otimização automática de imagens
+
+## Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── layout.tsx              # Layout global (Header + Footer)
+│   ├── page.tsx                # Página inicial (/)
+│   ├── page.module.css
+│   └── destinos/
+│       ├── page.tsx            # Listagem de destinos (/destinos)
+│       ├── page.module.css
+│       └── [id]/
+│           ├── page.tsx        # Página dinâmica do destino (/destinos/:id)
+│           └── page.module.css
+├── components/
+│   ├── Header/
+│   │   ├── index.tsx
+│   │   └── Header.module.css
+│   ├── Footer/
+│   │   ├── index.tsx
+│   │   └── Footer.module.css
+│   └── CardDestino/
+│       ├── index.tsx
+│       └── CardDestino.module.css
+├── data/
+│   └── destinos.ts             # Tipos e dados dos destinos
+└── styles/
+    └── globals.css             # Estilos globais e reset CSS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Rodar
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Clone o repositório
+git clone https://github.com/felipedev90/portal-viagens.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Entre na pasta do projeto
+cd portal-viagens
 
-## Learn More
+# Instale as dependências
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Rode o servidor de desenvolvimento
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Conceitos Aplicados
 
-## Deploy on Vercel
+| Conceito                       | Aplicação no Projeto                               |
+| ------------------------------ | -------------------------------------------------- |
+| **Rotas baseadas em arquivos** | Páginas criadas pela estrutura de pastas em `app/` |
+| **Rotas dinâmicas**            | Pasta `[id]` para páginas individuais de destinos  |
+| **Server Components**          | Componentes renderizados no servidor por padrão    |
+| **CSS Modules**                | Estilização com escopo isolado por componente      |
+| **Layout compartilhado**       | Header e Footer via `layout.tsx`                   |
+| **Otimização de imagens**      | Componente `next/image` com lazy loading           |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Felipe Augusto**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipesilva90/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white)](https://github.com/felipedev90)
