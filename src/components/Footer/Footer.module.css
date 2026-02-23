@@ -1,16 +1,16 @@
 .footer {
   background-color: #1a1a2e;
-  padding: 1rem 0;
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  border-top: 1px solid #eeecec;
 }
 
 .info,
@@ -19,6 +19,8 @@
   color: #eeecec;
   font-size: 1rem;
   text-align: center;
+
+  padding: 1rem;
 }
 
 .links {
@@ -26,7 +28,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: 0.5rem 0;
+  padding: 1rem;
   gap: 1rem;
 }
 
