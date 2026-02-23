@@ -18,3 +18,28 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.2rem;
+  }
+
+  .titleContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .titleContainer {
+    flex-direction: column;
+    padding-top: 0.6rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

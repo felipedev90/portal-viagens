@@ -34,10 +34,10 @@ export default async function DestinoDetalhe({ params }: Props) {
           <p className={styles.description}>{destino.descricao}</p>
 
           <div className={styles.actions}>
-            <button className={styles.button}>Quero conhecer</button>
             <Link href="/destinos">
               <button className={styles.buttonSecondary}>Voltar</button>
             </Link>
+            <button className={styles.button}>Quero conhecer</button>
           </div>
         </div>
       </div>

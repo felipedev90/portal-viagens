@@ -41,3 +41,18 @@
 .nav a:hover {
   color: #e94560;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 0.5rem;
+  }
+
+  .container {
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
