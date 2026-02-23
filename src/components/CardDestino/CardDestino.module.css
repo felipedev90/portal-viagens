@@ -31,3 +31,8 @@
   border-radius: 0.5rem;
   display: block;
 }
+
+.link {
+  text-decoration: none;
+  color: white;
+}
