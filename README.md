@@ -6,6 +6,8 @@ Aplicação web desenvolvida com **Next.js 15** que simula um portal de viagens,
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![CSS Modules](https://img.shields.io/badge/Estilização-CSS%20Modules-orange)
 
+**[Ver projeto ao vivo](https://portal-viagens-nu.vercel.app/)**
+
 ## Sobre o Projeto
 
 O Portal de Viagens é uma aplicação que lista destinos turísticos europeus e permite visualizar informações detalhadas sobre cada um. O projeto foi desenvolvido com foco em boas práticas de desenvolvimento frontend, utilizando os recursos modernos do Next.js App Router.
