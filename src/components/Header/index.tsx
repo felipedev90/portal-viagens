@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TicketsPlane } from "lucide-react";
+
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <TicketsPlane size={24} /> Portal de Viagens
+          Portal Viagens
         </Link>
 
         <nav className={styles.nav}>
